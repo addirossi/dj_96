@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{% url 'list' %}">< Вернуться в список товаров</a>
+    <h5>{{ item.article }}</h5>
+    <img src="{{ item.image.url }}" height="600" width="400">
+    <h1>{{ item.name }}</h1>
+    <p>{{ item.description }}</p>
+    <h2>{{ item.price }}</h2>
+</body>
+</html>
